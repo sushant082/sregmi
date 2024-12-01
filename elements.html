@@ -7,8 +7,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		        body {
+		            font-family: Arial, sans-serif;
+		            line-height: 1.6;
+		            margin: 0 auto;
+		            max-width: 800px;
+		            padding: 20px;
+		        }
+		        h1, h2 {
+		            color: #333;
+		        }
+		        h1 {
+		            font-size: 2em;
+		        }
+		        h2 {
+		            font-size: 1.5em;
+		        }
+		        p {
+		            margin: 0 0 10px;
+		        }
+		        hr {
+		            border: 1px solid #ccc;
+		            margin: 20px 0;
+		        }
+		        ul {
+		            margin: 0;
+		            padding-left: 20px;
+		        }
+		        ul li {
+		            margin: 5px 0;
+		        }
+		        .contact-info, .section {
+		            margin-bottom: 20px;
+		        }
+		        .bold {
+		            font-weight: bold;
+		        }
+		    </style>
+
 	</head>
 	<body class="is-preload">
+		<header>
+		        <h1>Sushant Regmi</h1>
+		        <h2>Computer Engineer</h2>
+		        <hr>
+		        <div class="contact-info">
+		            <p><b>Location:</b> Las Cruces, NM</p>
+		            <p><b>Phone:</b> 575-312-1711</p>
+		            <p><b>Email:</b> <a href="mailto:sregmi@nmsu.edu">sregmi@nmsu.edu</a>, <a href="mailto:sushantreg@gmail.com">sushantreg@gmail.com</a></p>
+		        </div>
+		    </header>
+		
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -35,9 +85,68 @@
 
 				<!-- Main -->
 					<div id="main">
+						<section class="section">
+					            <h2>Skills</h2>
+					            <hr>
+					            <ul>
+					                <li>Knowledge of Database Systems: Snowflake, Oracle, PostgreSQL, MySQL, MSSQL, PLSQL, PL/pgSQL, TSQL</li>
+					                <li>Data Warehouse, Data Validations, Data Management, Data Migration, ETL</li>
+					                <li>Programming: Python, C#, C++, C</li>
+					                <li>Computer Networks: OSI Model, Cisco CLI, Ansible</li>
+					                <li>Cloud: AWS (Lambda, S3, Cloudwatch, SNS, Appflow, Event Bridge), Microsoft Azure (Data Lake Storage, Data Factory, Pipelines)</li>
+					                <li>Frameworks and Tools: .NET, MVC/MVVM Architecture, Backbone.js, Ext JS</li>
+					                <li>Project Management Tools: Jira, Gitlab, Phabricator, Trello</li>
+					                <li>Database Administration: Vacuuming, backups, shell scripting</li>
+					            </ul>
+					        </section>
+					        <section class="section">
+					            <h2>Education/Certificates</h2>
+					            <hr>
+					            <ul>
+					                <li><b>M.S. in Computer Science</b>, New Mexico State University, Las Cruces, NM, 2023–Present</li>
+					                <li><b>B.E. in Computer Engineering</b>, Kantipur Engineering College, Nepal, 2012–2015</li>
+					                <li><b>Mental Health Advocate Program</b>, New Mexico State University, 2023</li>
+					            </ul>
+					        </section>
+					        <section class="section">
+					            <h2>Experience</h2>
+					            <hr>
+					            <h3>Senior Software Engineer, Logic Information System - LIS Nepal</h3>
+					            <p><b>March 2022 – July 2023, Nepal</b></p>
+					            <ul>
+					                <li>Led BI projects for global retail clients, collaborating with onshore teams.</li>
+					                <li>Designed and developed BI solutions, evaluated and recommended BI tools.</li>
+					                <li>Managed technical teams and ensured alignment with client requirements.</li>
+					                <li>Delivered training for clients to utilize BI tools effectively.</li>
+					            </ul>
+					            <h3>Senior Software Engineer, Shangrila Microsystems</h3>
+					            <p><b>February 2016 – March 2022, Nepal</b></p>
+					            <ul>
+					                <li>Built and deployed scalable, modular software products.</li>
+					                <li>Developed a shared central authentication system using JavaScript and .NET.</li>
+					                <li>Collaborated with clients to define specifications and system designs.</li>
+					                <li>Wrote Ext JS, Backbone.js applications in MVC architecture.</li>
+					            </ul>
+					        </section>
+					        <section class="section">
+					            <h2>Projects</h2>
+					            <hr>
+					            <h3>Hot Topic – Oracle Upgrade</h3>
+					            <p>Reporting and Data Warehousing project for Hot Topic Inc., using Snowflake and Looker.</p>
+					            <h3>Staples – Data Warehousing</h3>
+					            <p>ETL framework for Staples Inc., loading data into Snowflake using streams and pipes.</p>
+					            <h3>David Yurman - Adobe Integration</h3>
+					            <p>Integrated AWS services for data migration and reporting, decommissioning the Hybris system.</p>
+					            <h3>PMIS for Nepal Police</h3>
+					            <p>Police Management Information System for personnel records, hierarchy management, and reporting.</p>
+					            <h3>PPIS for DoPPR</h3>
+					            <p>Web application to calculate pensions and benefits for retired police personnel.</p>
+					        </section>
+
+						
 
 						<!-- Post -->
-							<section class="post">
+<!-- 							<section class="post">
 								<header>
 									<h1>Sushant Regmi</h1>
 									<p><strong>Computer Engineer</strong></p>
@@ -103,7 +212,7 @@
 										<li><strong>PPIS for DoPPR:</strong> Developed a web app for pension and gratuity calculations for retired police personnel.</li>
 									</ul>
 								</div>
-							</section>
+							</section> -->
 
 					</div>
 
