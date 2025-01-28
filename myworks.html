@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Works/Projects - Sushant Regmi</title>
+		<meta charset="utf-8" />
+		<style>
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+            }
+    
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+            }
+			header a{
+                background-color: #333;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+            }
+            nav {
+                background-color: #444;
+                color: #fff;
+                justify-content: center;
+                padding: 10px 0;
+            }
+    
+            nav a {
+                color: #fff;
+                padding: 10px 20px;
+                margin: 0 10px;
+            }
+    
+            .content {
+                padding: 20px;
+                margin: 20px;
+                background-color: #fff;
+            }
+    
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+	</head>
+	<body>
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html">Sushant Regmi</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links" style="list-style-type: none;">
+							<!-- <li><a href="index.html">My Introduction</a></li> -->
+							<li class="active"><a href="myworks.html">My Works</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section>
+								<!-- <header>
+									<p>This page has a list of my past work and projects</p>
+								</header> -->
+								<h2>DBMSii Project</h2>
+								<p>Simulation of offline processing of 1-minute Stock Data to calculate SMA/RR.<br/>https://github.com/sushant082/dbmsiiSMProject</p>
+								<img src="images/dilbert-db.png">
+								<h2>Data Warehousing & Business Intelligence Projects</h2>
+								<p><h1>Hot Topic-Oracle Upgrade:</h1>
+									- Client has performance issues with on-prem OLAP system as well as maintainace overhead of scheduling and executing jobs
+									</br>- Solution: implementation of compute scalable snowflake cloud edw
+									</br>- I build ETL for history conversion of omnichannel data from orders, sales, returns ,inventory from oracle system
+									</br>- Loaded into to snowflake datawarehouse/datamart for the looker dashboard
+									</br>- With the required performance boost achieved the client were able to decommision their legacy on-prem system
+								</p>
+								<p><h1>Staples-EDW:</h1>
+									Developed DWH with ETL frameworks in Snowflake.
+									</br>- Client required a DWH for their retail data of sales, order, return, cost-to-serve, scm
+									</br>- They had 5+ data sources, sources dump 1000+ unstructured data file in ADLS container at random frequency
+									</br>- Developed data ingestion pipeline for history conversion as well as delta conversion, using snow-stream/snow-pipes/snow-tasks
+								</p>
+								<p><h1>David Yurman-Adobe Integration:</h1>
+									Integrated AWS for reporting system ETL.
+									</br>- Client uses Salesforce to improve customer interactions and marketing campaigns. they relied in Hybris for managing customer data, marketing, and sales.
+									</br>- As solution I used AWS, periodic lambda script excecution to trigger appflow to extract the salesforce data and load the snowflake archive db
+									</br>- After each new archive my stored procedure tranforms the PII, orders, returns, sales data accordingly for the endpoint view
+									</br>- Client gained scalable, high performance DWH for data-driven decision making and was able to decommision hybris
+								</p>
+								<h2>Enterprise Applications</h2>
+									<p><h1>Police Management Information System (PMIS):</h1> Built a system for Nepal Police to manage personnel data, organization hierarchy, and activity records, aiding in decision-making for promotions, transfers, and retirements.
+										</br>- client needed a robust and unified web application to decommision their inhouse legacy desktop application
+										</br>- I led the team to developed Police Management Information System to manage 75,000+ personnel records, streamlining access to the individuals' dossier
+										</br>- client desparately needed an efficient method for handling promotion and transfers. they used to manually calculate for each personnel by looking at each files such as trainings, education, years-in-service, discipline, awards which a person can accumulate a lot of and  requires meticulous and tedious work to translate into merit points as per the guidelines based on the dossier. they had entire department working for it round the clock.
+										</br>- I built a decision support system which could generate a merit list in seconds for the entire workforce in organization. I used the stored procedures in oracle for calculation and populate the table. the table used by a view will be used in reporting on the web app frontend.										
+									</p>
+									<p><h1>Police Personnel Information System (PPIS):</h1> Developed a pension and gratuity calculation web app for retired police personnel and their dependents.
+										</br>- Client used to manually calculate to determine the pensions/retirement-facilities of each applicant based on a provided spreadsheet. this aproach could only serve at most 5 applicant a day because calculating for each personnel by manually checking each files such as trainings, education, years-in-service, discipline, awards and a police personnel could accumulate a lot of these until their retirement.
+										</br>- The solution was to build a web application in .NET with oracle db, hosted in the local server, once all the dossier data was accurately imported the system was able to improve the performace by 98%. the service went from 5/day to maximum of 5 minutes per applicant.										
+									</p>
+									<p><h1>Local Government Personnel System:</h1> Designed a web application for managing employee records and operations at the federal local government level.</p>
+									<p><h1>Revenue System for TIACAO</h1>
+										Created a revenue management system for Tribhuvan International Airport Civil Aviation, streamlining financial operations and data reporting.</p>
+									<img src="images/erp.webp">
+									<h2>ETL and Data Migration Tools</h2>
+									<p>Built customizable ETL tools for cross-database data migrations and architecture analysis. Ensured accurate data mapping and validations during large-scale migrations.
+										</br>- cross db data migration tool was required while the city offices in my country transitioned from local desktop app to a central web app
+										</br>- 5 large data migration project for big metro city with data volume ranging from 10 to 25 gb
+										</br>- 90 small data migration project for smaller municipal city with data volume less than 10 gb
+										</br>- my scrpits was able to guarantee 100% data accuracy over the known systems, 90% accurate over other. it consist a .net app capable of connecting to mysql,postgres,oracle,mssql or a flat-file and ETL into the postgres db at the end.
+									</p>
+									<h2> Development & Networking</h2>
+									<p>Developed scalable and modular software systems, including central authentication tools and client-server applications.</p>
+									<p>Currently focusing on enterprise network operations at NMSU, maintaining Layers 1 and 2 of the OSI model and optimizing infrastructure.</p>
+									<img src="images/network.jpg">
+							</section>
+					</div>
+	<!-- Footer -->
+    <footer>
+        <hr>
+        <p>Sushant Regmi Personal Website | Modern Web Technologies | NMSU Spring 2025</p>
+    </footer>
+	</body>
+
+</html>

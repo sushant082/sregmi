@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Sushant Regmi</title>
+		<meta charset="utf-8" />
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+            }
+    
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+            }
+            header a{
+                background-color: #333;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+            }
+            nav {
+                background-color: #444;
+                color: #fff;
+                justify-content: center;
+                padding: 10px 0;
+            }
+    
+            nav a {
+                color: #fff;
+                padding: 10px 20px;
+                margin: 0 10px;
+            }
+    
+            .content {
+                padding: 20px;
+                margin: 20px;
+                background-color: #fff;
+            }
+    
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                bottom: 0;
+                width: 100%;
+            }
+
+            #theme-toggle {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        body.dark {
+            background-color: #2c2c2c;
+            color: #ddd;
+        }
+
+        body.dark header {
+            background-color: #1e1e1e;
+        }
+
+        body.dark nav {
+            background-color: #333;
+        }
+
+        body.dark .content {
+            background-color: #444;
+        }
+
+        body.dark footer {
+            background-color: #1e1e1e;
+        }
+        </style>
+	</head>
+	<body>
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Sushant Regmi</a></h1>
+                        <button id="theme-toggle">Dark/Light Mode</button>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links" style="list-style-type: none;">
+							<!-- <li class="active"><a href="index.html">My Introduction</a></li> -->
+							<li><a href="myworks.html">My Works</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+								<!-- <header class="major"> -->
+									<p>Hi there! I'm Sushant Regmi, a passionate Computer Engineer and current M.S. Computer Science student at New Mexico State University, graduating in May 2025. With over six years of experience as a Senior Software Engineer, I've led exciting BI projects, designed scalable software solutions, and worked with global teams to bring ideas to life.</p>
+
+									<p>In my current role as a Graduate Assistant at NMSU, I dive deep into enterprise network operations, ensuring the university's infrastructure stays rock solid. My toolkit includes coding in Python, C#, and C++, building with Snowflake and other databases, and exploring the cloud through AWS and Azure.</p>
+										
+									<p>When I'm not buried in code or optimizing networks, I love stepping outside for short hikes, exploring rare landscapes, and traveling to fun, exciting places. At home, you'll usually find me listening to music, catching the latest TV series, or enjoying a good movie marathon. Life's all about finding the right balance between work, nature, and a great playlist!</p>
+									<img src="images/2025-01-27 20_33_33-srws.png">
+								<!-- </header> -->
+					</div>
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>Sushant Regmi Personal Website | Modern Web Technologies | NMSU Spring 2025</p>
+    </footer>
+    
+    <script>
+        document.getElementById("theme-toggle").onclick = function(){
+         document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+        </script>    
+	</body>
+    
+</html>
