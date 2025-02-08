@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Works/Projects - Sushant Regmi</title>
+		<meta charset="utf-8" />
+		<style>
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                padding: 15px;
+            }
+    
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+            }
+			header a{
+                background-color: #333;
+                color: #fff;
+                padding: 15px 0;
+                text-align: center;
+            }
+            nav {
+                background-color: #444;
+                color: #fff;
+                justify-content: center;
+                padding: 10px 0;
+            }
+    
+            nav a {
+                color: #fff;
+                padding: 10px 20px;
+                margin: 0 10px;
+            }
+    
+            .content {
+                padding: 20px;
+                margin: 20px;
+                background-color: #fff;
+            }
+    
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+	</head>
+	<body>
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html">Sushant Regmi</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links" style="list-style-type: none; display: flex;">
+							<!-- <li class="active"><a href="index.html">My Introduction</a></li> -->
+							<li><a href="myworks.html">My Works</a></li>
+							<li><a href="dwandbi.html">DW & BI</a></li>
+							<li><a href="enterprise.html">Enterprise</a></li>
+							<li><a href="myhobbies.html">My Hobbies</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section>
+								<h2>Data Warehousing & Business Intelligence Projects</h2>
+								<img src="images/data_pipeline.png">
+								<p><h1>Hot Topic-Oracle Upgrade:</h1>
+									- Client has performance issues with on-prem OLAP system as well as maintainace overhead of scheduling and executing jobs
+									</br>- Solution: implementation of compute scalable snowflake cloud edw
+									</br>- I build ETL for history conversion of omnichannel data from orders, sales, returns ,inventory from oracle system
+									</br>- Loaded into to snowflake datawarehouse/datamart for the looker dashboard
+									</br>- With the required performance boost achieved the client were able to decommision their legacy on-prem system
+								</p>
+								<p><h1>Staples-EDW:</h1>
+									Developed DWH with ETL frameworks in Snowflake.
+									</br>- Client required a DWH for their retail data of sales, order, return, cost-to-serve, scm
+									</br>- They had 5+ data sources, sources dump 1000+ unstructured data file in ADLS container at random frequency
+									</br>- Developed data ingestion pipeline for history conversion as well as delta conversion, using snow-stream/snow-pipes/snow-tasks
+								</p>
+								<p><h1>David Yurman-Adobe Integration:</h1>
+									Integrated AWS for reporting system ETL.
+									</br>- Client uses Salesforce to improve customer interactions and marketing campaigns. they relied in Hybris for managing customer data, marketing, and sales.
+									</br>- As solution I used AWS, periodic lambda script excecution to trigger appflow to extract the salesforce data and load the snowflake archive db
+									</br>- After each new archive my stored procedure tranforms the PII, orders, returns, sales data accordingly for the endpoint view
+									</br>- Client gained scalable, high performance DWH for data-driven decision making and was able to decommision hybris
+								</p>
+							</section>
+					</div>
+	<!-- Footer -->
+    <footer>
+        <hr>
+        <p>Sushant Regmi Personal Website | Modern Web Technologies | NMSU Spring 2025</p>
+    </footer>
+	</body>
+
+</html>
