@@ -3,10 +3,31 @@ var p1Choice, p2Choice, turn;
 function startgame(){
     p1Choice = document.getElementById("p1-choice").value;
     p2Choice = document.getElementById("p2-choice").value;
-    // console.log("P1 chooses: "+ p1Choice);
-    // console.log("P2 chooses: "+ p2Choice);
-    document.getElementById("msg-area").innerHTML = "Player 1 attack now";
-    turn = 1;
+
+    if(document.getElementById("msg-area").innerHTML != "Game Ended! Refresh Page to Begin Again"){
+        if(p1Choice > 0 && p2Choice > 0){
+            turn = 1;
+            document.getElementById("msg-area").innerHTML = "Player 1 attack now";
+        }
+        else{
+            document.getElementById("msg-area").innerHTML = "Both players need to enter the location";
+        }
+    }
+};
+
+function endgame(){
+    document.getElementById("play-area").remove();
+    document.getElementById("msg-area").innerHTML = "Game Ended! Refresh Page to Begin Again";
+};
+
+function changecolor(element){
+    colorchangeplayer = element.attributes.id.value;
+    if(colorchangeplayer == "p1-color-button"){
+        document.getElementById("play-area-p1").style.backgroundColor = "red";
+    }
+    if(colorchangeplayer == "p2-color-button"){
+        document.getElementById("play-area-p2").style.backgroundColor = "blue";
+    }
 };
 
 function gameplay(element){
