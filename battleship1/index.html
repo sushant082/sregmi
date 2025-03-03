@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+        <title>A 2P-Game</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="myscripts.js"> </script>
+    </head>
+
+    <body>
+        <section>
+            <div class="msg-grid-container">
+                <div id="rules-area">
+                    <p>Rules</p>
+                    <p>Play In Turns</p>
+                    <p>Do not attack your own base</p>
+                    <p>One Turn One Attack</p>
+                    <p>Player 1 Goes First</p>
+                </div>
+                <div id="input-area">
+                    <p>Enter your battleship location (1-9)</p>
+                    <label for="p1-choice">P1 : </label>
+                    <input type="password" id="p1-choice" name="p1-choice"> <br><br>
+                    <label for="p2-choice">P2 : </label>
+                    <input type="password" id="p2-choice" name="p2-choice"><br><br>
+                    <input id="start-button" class="buttons" onclick="startgame()" type="submit" value="Start Game">
+                </div>
+            </div>
+            <div class="msg-grid-container">
+                <div id="msg-area">
+                </div>
+            </div>
+                
+        </section>
+
+
+        <section>
+            <div id="play-area" class="grid-container">
+
+                <div id="play-area-p1" class="play-area grid-container">
+                    <div class="item1"><h1>Player 1</h1></div>
+                    <div id="p1-box-1 p1-box" class="boxes" onclick="gameplay(this)" value=1><img id="p1-box-1-img" src="">1</div>
+                    <div id="p1-box-2 p1-box" class="boxes" onclick="gameplay(this)" value=2><img id="p1-box-2-img" src="">2</div>
+                    <div id="p1-box-3 p1-box" class="boxes" onclick="gameplay(this)" value=3><img id="p1-box-3-img" src="">3</div>
+                    <div id="p1-box-4 p1-box" class="boxes" onclick="gameplay(this)" value=4><img id="p1-box-4-img" src="">4</div>
+                    <div id="p1-box-5 p1-box" class="boxes" onclick="gameplay(this)" value=5><img id="p1-box-5-img" src="">5</div>
+                    <div id="p1-box-6 p1-box" class="boxes" onclick="gameplay(this)" value=6><img id="p1-box-6-img" src="">6</div>
+                    <div id="p1-box-7 p1-box" class="boxes" onclick="gameplay(this)" value=7><img id="p1-box-7-img" src="">7</div>
+                    <div id="p1-box-8 p1-box" class="boxes" onclick="gameplay(this)" value=8><img id="p1-box-8-img" src="">8</div>
+                    <div id="p1-box-9 p1-box" class="boxes" onclick="gameplay(this)" value=9><img id="p1-box-9-img" src="">9</div>
+                </div>
+
+                <div id="play-area-p2" class="play-area grid-container">
+                    <div class="item1"><h1>Player 2</h1></div>
+                    <div id="p2-box-1 p2-box" class="boxes" onclick="gameplay(this)" value=1><img id="p2-box-1-img" src="">1</div>
+                    <div id="p2-box-2 p2-box" class="boxes" onclick="gameplay(this)" value=2><img id="p2-box-2-img" src="">2</div>
+                    <div id="p2-box-3 p2-box" class="boxes" onclick="gameplay(this)" value=3><img id="p2-box-3-img" src="">3</div>
+                    <div id="p2-box-4 p2-box" class="boxes" onclick="gameplay(this)" value=4><img id="p2-box-4-img" src="">4</div>
+                    <div id="p2-box-5 p2-box" class="boxes" onclick="gameplay(this)" value=5><img id="p2-box-5-img" src="">5</div>
+                    <div id="p2-box-6 p2-box" class="boxes" onclick="gameplay(this)" value=6><img id="p2-box-6-img" src="">6</div>
+                    <div id="p2-box-7 p2-box" class="boxes" onclick="gameplay(this)" value=7><img id="p2-box-7-img" src="">7</div>
+                    <div id="p2-box-8 p2-box" class="boxes" onclick="gameplay(this)" value=8><img id="p2-box-8-img" src="">8</div>
+                    <div id="p2-box-9 p2-box" class="boxes" onclick="gameplay(this)" value=9><img id="p2-box-9-img" src="">9</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="buttons-area">
+                <!-- <button type="button" id="new-game-button" class="buttons">New Game</button> -->
+            </div>
+        </section>
+
+    </body>
+</html>

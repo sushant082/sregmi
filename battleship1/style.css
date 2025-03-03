@@ -1,0 +1,73 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(77, 79, 80);
+}
+
+.flex-container > div {
+  background-color: gray;
+  /* width: 500px; */
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.boxes:hover {
+    background-color: rgb(242, 5, 5);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: rgb(132, 133, 133);
+  }
+  
+  .grid-container > div {
+    background-color: rgb(203, 199, 199);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  #play-area-p1{
+    background-color: rgb(6, 186, 240);
+  }
+  #play-area-p2{
+    background-color: rgb(177, 224, 35);
+  }
+ .buttons{
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+  font-size: 30px;
+}
+.buttons:hover{
+    background-color: chocolate;
+}
+.msg-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: rgb(132, 133, 133);
+  }  
+  .msg-grid-container > div {
+    /* width: 500px; */
+    background-color: rgb(203, 199, 199);
+    text-align: center;
+    padding: 10px;
+  font-size: 20px;
+  }
+  #msg-area{
+    background-color: rgb(3, 3, 0);
+    text-align: left;
+    color: greenyellow;
+  }
