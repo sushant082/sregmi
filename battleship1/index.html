@@ -20,10 +20,15 @@
                 <div id="input-area">
                     <p>Enter your battleship location (1-9)</p>
                     <label for="p1-choice">P1 : </label>
-                    <input type="password" id="p1-choice" name="p1-choice"> <br><br>
+                    <input type="password" id="p1-choice" name="p1-choice">
+                    <input id="p1-color-button" class="small-buttons" onclick="changecolor(this)" type="submit" value="color change">
+                    <br><br>
                     <label for="p2-choice">P2 : </label>
-                    <input type="password" id="p2-choice" name="p2-choice"><br><br>
+                    <input type="password" id="p2-choice" name="p2-choice">
+                    <input id="p2-color-button" class="small-buttons" onclick="changecolor(this)" type="submit" value="color change">
+                    <br><br>
                     <input id="start-button" class="buttons" onclick="startgame()" type="submit" value="Start Game">
+                    <input id="end-button" class="buttons" onclick="endgame()" type="submit" value="End Game">
                 </div>
             </div>
             <div class="msg-grid-container">
